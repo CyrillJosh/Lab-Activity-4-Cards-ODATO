@@ -16,19 +16,29 @@
     flex-wrap: wrap;
     gap: 20px ;
     justify-content: space-evenly;
+    align-content: stretch;
 }
 
 .card {
-    height: 300px;
-    width: 200px;
+    height: 360px;
+    width: 250px;
     box-shadow: 0 1 5px black;
     border: 3px solid black;
     border-radius: 10px;
+    transition: 0.5s;
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .card img {
     width: 100%;
     padding: 5px;
+    background-color: white;
 }
 
 .pokemon-id {
@@ -66,72 +76,90 @@ li span {
 /* Pokemon types */
 .type-normal {
     background-color: #a8a878;
-}s
+    box-shadow: 2px 2px 2px grey;
+}
 
 .type-fire {
     background-color: #f08030;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-water {
     background-color: #6890f0;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-electric {
     background-color: #f8d030;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-grass {
     background-color: #78c850;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-ice {
     background-color: #98D8D8;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .fighting {
     background-color: #C03028;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-poison {
     background-color: #A040A0;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-ground {
     background-color: #E0C068;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-flying {
     background-color: #A890F0;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-psychic {
     background-color: #F85888;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-bug {
     background-color: #A8B820;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-rock {
     background-color: #B8A038;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-ghost {
     background-color: #705898;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-dragon {
     background-color: #7038F8;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-dark {
     background-color: #705848;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-steel {
     background-color: #B8B8D0;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .type-fairy {
     background-color: #F0B6BC;
+    box-shadow: 2px 2px 2px grey;
 }
