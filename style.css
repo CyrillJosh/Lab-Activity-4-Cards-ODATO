@@ -3,12 +3,31 @@
     box-sizing: border-box;
 }
 
-.main-container h1 {
-    text-align: center;
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-shadow: 0 1px 5px black;
 }
 
-.main-container {
+.main-container h1 {
+    text-align: center;
+    padding: 10px;
+}
 
+.main-container > img {
+    position:fixed;
+    width: 150vh;
+    margin: 5% auto;
+    right: 0;
+    left: 0;
+    top: -50px;
+    z-index: -3;
+    opacity: 0.1;
+    rotate: -30deg;
 }
 
 .pokemon-container {
@@ -17,22 +36,25 @@
     gap: 20px ;
     justify-content: space-evenly;
     align-content: stretch;
+    margin-top: 50px;
 }
 
 .card {
     height: 360px;
     width: 250px;
-    box-shadow: 0 1 5px black;
-    border: 3px solid black;
+    box-shadow: 0 1px 5px black;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: rgb(230, 230, 230);
     overflow: hidden;
+    border: 1px solid black;
 }
 
 .card:hover {
     transform: scale(1.05);
     transition: 0.5s;
+    box-shadow: 0 0px 5000px black;
+    border: 1px solid black;
 }
 
 .card img {
@@ -69,7 +91,8 @@ li span {
     padding: 3px 15px;
     border-radius: 5px;
     color: white;
-    text-shadow: 1px 2px 3px black;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid gray;
 }
 
 
